@@ -2,43 +2,49 @@
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
+<!-- 关键：适配手机屏幕 -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <title>联系站长</title>
 <style>
 body{
     font-family:微软雅黑;
     background:#f7f8fa;
     text-align:center;
-    padding:40px 20px;
+    padding:30px 15px; /* 手机边距优化 */
+    margin:0;
 }
 .box{
     background:white;
-    max-width:400px;
+    max-width:420px;
+    width:92%; /* 手机自适应宽度 */
     margin:0 auto;
-    padding:30px;
-    border-radius:20px;
+    padding:35px 25px; /* 内边距加大 */
+    border-radius:24px;
     box-shadow:0 4px 20px rgba(0,0,0,0.05);
+    box-sizing:border-box;
 }
 .title{
-    font-size:24px;
+    font-size:28px; /* 标题放大 */
     font-weight:bold;
-    margin-bottom:20px;
+    margin-bottom:25px;
     color:#333;
 }
 .qrcode{
-    width:200px;
-    height:200px;
-    margin:20px auto;
+    width:240px; /* 二维码放大 */
+    height:240px;
+    margin:25px auto;
 }
 .desc{
-    font-size:16px;
+    font-size:18px; /* 文字放大 */
     color:#555;
-    line-height:1.8;
-    margin-top:20px;
+    line-height:2; /* 行高加宽，更好阅读 */
+    margin-top:25px;
 }
 .back{
-    margin-top:30px;
+    margin-top:35px;
 }
 .back a{
+    font-size:18px; /* 返回链接放大 */
     color:#0077ed;
     text-decoration:none;
 }
@@ -51,8 +57,8 @@ body{
     <img src="qrcode.jpg" class="qrcode" alt="二维码">
 
     <div class="desc">
-        <br>
-        扫码添加微信，有事随时联系我~
+    
+        扫码添加微信，有事随时联系我<br>
     </div>
 
     <div class="back">
