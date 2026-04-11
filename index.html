@@ -2,72 +2,97 @@
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
-<title>欢迎进入</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>欢迎光临</title>
 <style>
-body{
-    font-family:微软雅黑;
-    background:url(yingwen.png) no-repeat center center fixed;
-    background-size: cover;
-    margin:0;
-    padding:30px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-.container{max-width:500px;margin:0 auto;}
+
+body{
+    font-family: "Microsoft YaHei", 微软雅黑, sans-serif;
+    background: url(bg.jpg) no-repeat center center fixed;
+    background-size: cover;
+    padding: 30px 15px;
+    min-height: 100vh;
+}
+
+.container{
+    max-width: 500px;
+    margin: 0 auto;
+}
 
 .title{
-    text-align:center;
-    font-size: 36px;
+    text-align: center;
+    font-size: 32px;
     font-weight: 900;
-    margin-bottom: 22px;
+    margin-bottom: 24px;
+    padding: 14px 20px;
+    border-radius: 16px;
+    background-color: rgba(255,255,255,0.85);
+    border: 2px solid #fff;
+    position: relative;
+}
+
+.title span {
     background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
-    padding: 12px 20px;
-    border-radius: 16px;
-    background-color: rgba(255,255,255,0.85);
-    border: 2px solid #fff;
+    display: inline-block;
 }
 
 .box{
-    background:rgba(255,255,255,0.9);
-    border-radius:12px;
-    padding: 8px 14px;
-    margin-bottom: 8px;
-    box-shadow:0 3px 8px rgba(0,0,0,0.05);
-    text-align:center;
+    background: rgba(255,255,255,0.92);
+    border-radius: 14px;
+    padding: 16px 14px;
+    margin-bottom: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    text-align: center;
+    transition: all 0.2s ease;
+}
+
+.box:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.1);
 }
 
 .box h2{
-    font-size:18px;
-    font-weight:bold;
-    color:#333;
-    margin: 2px 0 6px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
 }
 
 .links{
-    display:flex;
-    flex-wrap:wrap;
-    gap:6px;
-    justify-content:center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
 }
 
 .links a{
-    background:#eef6ff;
-    color:#0077ed;
-    padding:6px 12px;
-    border-radius:8px;
-    text-decoration:none;
-    font-size:14px;
+    background: #eef6ff;
+    color: #0077ed;
+    padding: 8px 14px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: all 0.2s ease;
+    border: 1px solid transparent;
 }
 .links a:hover{
-    background:#0077ed;
-    color:white;
+    background: #0077ed;
+    color: white;
+    transform: scale(1.05);
 }
 </style>
 </head>
 <body>
 <div class="container">
-  <div class="title">欢迎光临本站，祝大家马年大吉</div>
+  <div class="title"><span>欢迎光临本站，祝大家马年大吉</span></div>
 
   <div class="box">
     <h2>黑丝嫩穴强奸乱伦海量大片</h2>
@@ -77,9 +102,9 @@ body{
   </div>
 
   <div class="box">
-    <h2>红中麻将1元1分</h2>
+    <h2>联系站长</h2>
     <div class="links">
-      <a href="contact.html" target="_blank">立即下载</a>
+      <a href="contact.html" target="_blank">暂未开放</a>
     </div>
   </div>
 </div>
