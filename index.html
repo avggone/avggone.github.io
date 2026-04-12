@@ -3,109 +3,102 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>欢迎进入</title>
+<title>导航页</title>
 <style>
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+*{margin:0;padding:0;box-sizing:border-box;font-family:system-ui,sans-serif}
+body{background:#f5f5f7}
+.top-banner{
+background:url("bj.jpg") center center / cover no-repeat;
+width:100%;
+padding:80px 20px 60px;
 }
-
-body{
-    font-family: "Microsoft YaHei", 微软雅黑, sans-serif;
-    background: url(bg.jpg) no-repeat center center fixed;
-    background-size: cover;
-    padding: 30px 15px;
-    min-height: 100vh;
+.top-title{font-size:44px;color:#fff;font-weight:600}
+.main-card{
+background:#fff;
+margin:-30px 0 0;
+padding-top:20px;
+border-top-left-radius:30px;
+border-top-right-radius:30px;
+min-height:100vh;
+position:relative;
+z-index:1;
 }
-
-.container{
-    max-width: 500px;
-    margin: 0 auto;
+.notice-box{
+background:#f5f5f7;
+margin:0 20px 25px;
+padding:8px 16px;
+border-radius:12px;
+display:flex;
+align-items:center;
+gap:10px;
+font-size:17px;
+overflow:hidden;
 }
-
-.title{
-    text-align: center;
-    font-size: 20px;
-    font-weight: 900;
-    margin-bottom: 24px;
-    padding: 14px 20px;
-    border-radius: 16px;
-    background-color: rgba(255,255,255,0.85);
-    border: 2px solid #fff;
-    position: relative;
+.notice-icon{font-size:22px;flex-shrink:0}
+.scroll-text{flex:1;white-space:nowrap;overflow:hidden}
+marquee{font-size:17px}
+.container{padding:0 20px}
+.module-title{font-size:24px;margin-bottom:12px}
+.nav-btn{
+background:linear-gradient(90deg,#ff388c,#2848ee);
+width:100%;
+border-radius:18px;
+padding:22px 25px;
+display:flex;
+align-items:center;
+justify-content:space-between;
+margin-bottom:30px;
+text-decoration:none;
 }
-
-/* 这里改成清晰的红色，非常显眼 */
-.title span {
-    color: #c70000;
-    display: inline-block;
-}
-
-.box{
-    background: rgba(255,255,255,0.92);
-    border-radius: 14px;
-    padding: 16px 14px;
-    margin-bottom: 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-    text-align: center;
-    transition: all 0.2s ease;
-}
-
-.box:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 16px rgba(0,0,0,0.1);
-}
-
-.box h2{
-    font-size: 18px;
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 10px;
-}
-
-.links{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-    justify-content: center;
-}
-
-.links a{
-    background: #0066cc;
-    color: #ffffff;
-    padding: 10px 30px;
-    border-radius: 10px;
-    text-decoration: none;
-    font-size: 14px;
-    font-weight: bold;
-    transition: all 0.2s ease;
-    border: 1px solid transparent;
-}
-.links a:hover{
-    background: #004d99;
-    color: white;
-    transform: scale(1.05);
-}
+.btn-left{display:flex;align-items:center;gap:18px}
+.btn-icon{font-size:42px;color:#fff}
+.btn-text-box{color:#fff}
+.btn-main-text{font-size:32px;font-weight:500}
+.btn-sub-text{font-size:18px;color:#eee}
+.btn-arrow{font-size:36px;color:#fff}
 </style>
 </head>
 <body>
-<div class="container">
-  <div class="title"><span>欢迎光临本站<br>祝大家马年大吉</span></div>
 
-  <div class="box">
-    <h2>黑丝嫩穴强奸乱伦海量大片</h2>
-    <div class="links">
-      <a href="https://cos.ap-shanghai.myqcloud.com/5a9f-shanghai-030-sharedv4-01-1303031839/648d-1400313729/3d36-3BmqWpq8qkx7Lo3MKK6QlfXgJN8/256c621deaf0e06bb9aa26bc08d8e04d-341823.html#/?code=zqbn27" target="_blank">立即进入</a>
-    </div>
-  </div>
-
-  <div class="box">
-    <h2>联系站长</h2>
-    <div class="links">
-      <a href="contact.html" target="_blank">暂未开放</a>
-    </div>
-  </div>
+<div class="top-banner">
+<div class="top-title">欢迎光临本站</div>
 </div>
+
+<div class="main-card">
+<div class="notice-box">
+<span class="notice-icon">🔊</span>
+<div class="scroll-text">
+<marquee scrollamount="5">导航源码，提供源码出售、一条搭建服务</marquee>
+</div>
+</div>
+
+<div class="container">
+<div class="module-title">黑丝嫩穴强奸乱伦</div>
+<a href="https://www.baidu.com" target="_blank" class="nav-btn">
+<div class="btn-left">
+<span class="btn-icon">🎬</span>
+<div class="btn-text-box">
+<div class="btn-main-text">高清海量大片</div>
+<div class="btn-sub-text">立即进入</div>
+</div>
+</div>
+<span class="btn-arrow">▶️</span>
+</a>
+
+<div class="module-title">影视福利社</div>
+<!-- 这里已改为跳转到 qpym.html -->
+<a href="qpym.html" class="nav-btn">
+<div class="btn-left">
+<span class="btn-icon">🀄</span>
+<div class="btn-text-box">
+<div class="btn-main-text">红中麻将1元1分</div>
+<div class="btn-sub-text">真实千人在线</div>
+</div>
+</div>
+<span class="btn-arrow">▶️</span>
+</a>
+</div>
+</div>
+
 </body>
 </html>
